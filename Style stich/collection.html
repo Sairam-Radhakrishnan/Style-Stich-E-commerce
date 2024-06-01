@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Style Stitch</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="Style Stitch.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <!--Nav Bar-->
+   <nav class="navbar">
+    <img src="logo style.png" alt="logo" style="height: 70px;">
+    <div class="navbar-links">
+
+        <p class="navbar-link"><a href="Index.html">Home</a></p>
+        <p class="navbar-link"><a href="collection.html">Collections</a></p>
+        <p class="navbar-link"><a href="Contact.html" > Contact</a></p>
+
+    </div>
+
+    <div class="navbar-menu-toggle">
+        <i class="fa-solid fa-bars" onclick="showNavbar()"></i>
+
+    </div>
+
+</nav>
+<!--side Bar-->
+<div class="side-navbar">
+
+    <p style="text-align: right;">
+        <i class="fa-solid fa-xmark" onclick="closeNavbar()"></i>
+    </p>
+
+    <div class="sidebar-links">
+
+        <p class="side-navbar-links"> <a href="Index.html">Home </a> </p>
+        <p class="side-navbar-links"> <a href="collection.html">Collections</a> </p> 
+        <p class="side-navbar-links"> <a href="Contact.html">Contact</a>  </p>
+
+    </div>
+
+</div>
+
+    <!--Products-->
+    <div class="product-section"></div>
+    <form class="product-search">
+        <input type="text" id="search" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </form>
+
+    <div class="products" id="products">
+        <div class="product-box">
+            <img src="CollectionsImg/1 img.png" alt="New arrival" style="height: 350px; ;">
+            <p id="name-products">Women Slim Fit Sheath Dress  Color Grey </p>
+            
+    <form>
+        <input type="radio" name="size" value="362" id="size-s">
+        <label for="size-s">S - Rs.362</label><br>
+        
+        <input type="radio" name="size" value="372" id="size-m">
+        <label for="size-m">M - Rs.372</label><br>
+        
+        <input type="radio" name="size" value="382" id="size-l">
+        <label for="size-l">L - Rs.382</label><br>
+        
+        <input type="radio" name="size" value="392" id="size-xl">
+        <label for="size-xl">XL - Rs.392</label><br>
+        
+        <input type="radio" name="size" value="402" id="size-xxl">
+        <label for="size-xxl">XXL - Rs.402</label><br>
+        
+        <input type="radio" name="size" value="412" id="size-xxxl">
+        <label for="size-xxxl">XXXL - Rs.412</label><br>
+      </form>
+      
+
+      <input type="number" class="inputall" id="quantity" placeholder="Enter Qty" min="0">
+  
+
+   
+
+ 
+   <button id="cartadd" class="qtybtn" onclick="calculateTotal()" >Add To Bag <i class="fa-solid fa-bag-shopping"></i></button>
+   <button class="qtybtn" onclick="removeFromBag()"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+
+        <div class="product-box">
+            <img src="CollectionsImg/2 img.png" alt="New arrival" style="height: 350px; ;">
+            <p id="name-products1"> Men Checkered Formal Shirt Burgundy</p>
+
+            <form>
+                <input type="radio" name="size1" value="362" id="size-s1">
+                <label for="size-s1">S - Rs.362</label><br>
+                
+                <input type="radio" name="size1" value="372" id="size-m1">
+                <label for="size-m1">M - Rs.372</label><br>
+                
+                <input type="radio" name="size1" value="382" id="size-l1">
+                <label for="size-l1">L - Rs.382</label><br>
+                
+                <input type="radio" name="size1" value="392" id="size-xl1">
+                <label for="size-xl1">XL - Rs.392</label><br>
+                
+                <input type="radio" name="size1" value="402" id="size-xxl1">
+                <label for="size-xxl1">XXL - Rs.402</label><br>
+                
+                <input type="radio" name="size1" value="412" id="size-xxxl1">
+                <label for="size-xxxl1">XXXL - Rs.412</label><br>
+              </form>
+              
+        
+              <input type="number" class="inputall" id="quantity1" placeholder="Enter Qty" min="0">
+          
+        
+           
+        
+         
+           <button id="cartadd" class="qtybtn" onclick="calculateTotal1()" >Add To Bag <i class="fa-solid fa-bag-shopping"></i></button>
+           <button class="qtybtn" onclick="removeFromBag1()"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+        <div class="product-box">
+            <img src="CollectionsImg/3 img.png" alt="New arrival" style="height: 350px; ;">
+            <p id="name-products2"> Men  Stripes Formal Shirt Color Blue</p>
+
+            <form>
+                <input type="radio" name="size2" value="362" id="size-s2">
+                <label for="size-s1">S - Rs.362</label><br>
+                
+                <input type="radio" name="size2" value="372" id="size-m2">
+                <label for="size-m2">M - Rs.372</label><br>
+                
+                <input type="radio" name="size2" value="382" id="size-l2">
+                <label for="size-l2">L - Rs.382</label><br>
+                
+                <input type="radio" name="size2" value="392" id="size-xl2">
+                <label for="size-xl2">XL - Rs.392</label><br>
+                
+                <input type="radio" name="size2" value="402" id="size-xxl2">
+                <label for="size-xxl2">XXL - Rs.402</label><br>
+                
+                <input type="radio" name="size2" value="412" id="size-xxxl2">
+                <label for="size-xxxl2">XXXL - Rs.412</label><br>
+              </form>
+              
+        
+              <input type="number" class="inputall" id="quantity2" placeholder="Enter Qty" min="0">
+          
+        
+           
+        
+         
+           <button id="cartadd" class="qtybtn" onclick="calculateTotal2()" >Add To Bag <i class="fa-solid fa-bag-shopping"></i></button>
+           <button class="qtybtn" onclick="removeFromBag2()"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+
+        <div class="product-box">
+            <img src="CollectionsImg/4 img.png" alt="New arrival" style="height: 350px; ;">
+            <p id="name-products3"> Floral Print    A-line   Kurta       for      Women </p>
+
+            <form>
+                <input type="radio" name="size3" value="462" id="size-s3">
+                <label for="size-s3">S - Rs.462</label><br>
+                
+                <input type="radio" name="size3" value="572" id="size-m3">
+                <label for="size-m3">M - Rs.572</label><br>
+                
+                <input type="radio" name="size3" value="682" id="size-l3">
+                <label for="size-l3">L - Rs.682</label><br>
+                
+                <input type="radio" name="size3" value="792" id="size-xl3">
+                <label for="size-xl3">XL - Rs.792</label><br>
+                
+                <input type="radio" name="size3" value="802" id="size-xxl3">
+                <label for="size-xxl3">XXL - Rs.802</label><br>
+                
+                <input type="radio" name="size3" value="912" id="size-xxxl3">
+                <label for="size-xxxl3">XXXL - Rs.912</label><br>
+              </form>
+              
+        
+              <input type="number" class="inputall" id="quantity3" placeholder="Enter Qty" min="0">
+          
+        
+           
+        
+         
+           <button id="cartadd" class="qtybtn" onclick="calculateTotal3()" >Add To Bag <i class="fa-solid fa-bag-shopping"></i></button>
+           <button class="qtybtn" onclick="removeFromBag3()"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+        <div class="product-box">
+            <img src="CollectionsImg/6 img.png" alt="New arrival" style="height: 350px; ;">
+            <p id="name-products4"> Women  Printed Anarkali Kurta  Color Yellow </p>
+
+            <form>
+                <input type="radio" name="size4" value="662" id="size-s4">
+                <label for="size-s4">S - Rs.662</label><br>
+                
+                <input type="radio" name="size4" value="772" id="size-m4">
+                <label for="size-m4">M - Rs.772</label><br>
+                
+                <input type="radio" name="size4" value="882" id="size-l4">
+                <label for="size-l4">L - Rs.882</label><br>
+                
+                <input type="radio" name="size4" value="892" id="size-xl4">
+                <label for="size-xl4">XL - Rs.892</label><br>
+                
+                <input type="radio" name="size4" value="902" id="size-xxl4">
+                <label for="size-xxl4">XXL - Rs.902</label><br>
+                
+                <input type="radio" name="size4" value="912" id="size-xxxl4">
+                <label for="size-xxxl4">XXXL - Rs.912</label><br>
+              </form>
+              
+        
+              <input type="number" class="inputall" id="quantity4" placeholder="Enter Qty" min="0">
+          
+        
+           
+        
+         
+           <button id="cartadd" class="qtybtn" onclick="calculateTotal4()" >Add To Bag <i class="fa-solid fa-bag-shopping"></i></button>
+           <button class="qtybtn" onclick="removeFromBag4()"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+        <div class="product-box">
+            <img src="CollectionsImg/7 img.png" alt="New arrival" style="height: 350px; ;">
+            <p id="name-products5"> Women  Printed Anarkali Kurta  Color Yellow </p>
+
+            <form>
+                <input type="radio" name="size5" value="362" id="size-s5">
+                <label for="size-s5">S - Rs.362</label><br>
+                
+                <input type="radio" name="size5" value="472" id="size-m5">
+                <label for="size-m5">M - Rs.472</label><br>
+                
+                <input type="radio" name="size5" value="582" id="size-l5">
+                <label for="size-l5">L - Rs.582</label><br>
+                
+                <input type="radio" name="size5" value="692" id="size-xl5">
+                <label for="size-xl5">XL - Rs.692</label><br>
+                
+                <input type="radio" name="size5" value="702" id="size-xxl5">
+                <label for="size-xxl5">XXL - Rs.702</label><br>
+                
+                <input type="radio" name="size5" value="812" id="size-xxxl5">
+                <label for="size-xxxl5">XXXL - Rs.812</label><br>
+              </form>
+              
+        
+              <input type="number" class="inputall" id="quantity5" placeholder="Enter Qty" min="0">
+          
+        
+           
+        
+         
+           <button id="cartadd" class="qtybtn" onclick="calculateTotal5()" >Add To Bag <i class="fa-solid fa-bag-shopping"></i></button>
+           <button class="qtybtn" onclick="removeFromBag5()"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+        <div class="product-box">
+            <img src="CollectionsImg/8 img.png" alt="New arrival" style="height: 350px; ;">
+            <p id="name-products6">Men Checked Slim Fit Cotton Shirt </p>
+
+            <form>
+                <input type="radio" name="size6" value="362" id="size-s6">
+                <label for="size-s6">S - Rs.362</label><br>
+                
+                <input type="radio" name="size6" value="472" id="size-m6">
+                <label for="size-m6">M - Rs.472</label><br>
+                
+                <input type="radio" name="size6" value="582" id="size-l6">
+                <label for="size-l6">L - Rs.582</label><br>
+                
+                <input type="radio" name="size6" value="692" id="size-xl6">
+                <label for="size-xl6">XL - Rs.692</label><br>
+                
+                <input type="radio" name="size6" value="702" id="size-xxl6">
+                <label for="size-xxl6">XXL - Rs.702</label><br>
+                
+                <input type="radio" name="size6" value="812" id="size-xxxl6">
+                <label for="size-xxxl6">XXXL - Rs.812</label><br>
+              </form>
+              
+        
+              <input type="number" class="inputall" id="quantity6" placeholder="Enter Qty" min="0">
+          
+        
+           
+        
+         
+           <button id="cartadd" class="qtybtn" onclick="calculateTotal6()" >Add To Bag <i class="fa-solid fa-bag-shopping"></i></button>
+           <button class="qtybtn" onclick="removeFromBag6()"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+
+
+        
+
+
+
+        <div class="product-box">
+            <img src="CollectionsImg/10 img.png" alt="New arrival" style="height: 350px; ;">
+            <p id="name-products7">  Men Printed Slim Fit Shirt with Patch Pocket  Black </p>
+
+            <form>
+                <input type="radio" name="size7" value="462" id="size-s7">
+                <label for="size-s7">S - Rs.462</label><br>
+                
+                <input type="radio" name="size7" value="572" id="size-m7">
+                <label for="size-m7">M - Rs.572</label><br>
+                
+                <input type="radio" name="size7" value="682" id="size-l7">
+                <label for="size-l7">L - Rs.682</label><br>
+                
+                <input type="radio" name="size7" value="792" id="size-xl7">
+                <label for="size-xl7">XL - Rs.792</label><br>
+                
+                <input type="radio" name="size7" value="702" id="size-xxl7">
+                <label for="size-xxl7">XXL - Rs.702</label><br>
+                
+                <input type="radio" name="size7" value="812" id="size-xxxl7">
+                <label for="size-xxxl7">XXXL - Rs.812</label><br>
+              </form>
+              
+        
+              <input type="number" class="inputall" id="quantity7" placeholder="Enter Qty" min="0">
+          
+        
+           
+        
+         
+           <button id="cartadd" class="qtybtn" onclick="calculateTotal7()" >Add To Bag <i class="fa-solid fa-bag-shopping"></i></button>
+           <button class="qtybtn" onclick="removeFromBag7()"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+        <div class="product-box">
+            <img src="CollectionsImg/14 img.png" alt="New arrival" style="height: 350px; ;">
+            <p id="name-products7">  Floral Print Top with Puff Sleeves  </p>
+
+            <form>
+                <input type="radio" name="size7" value="462" id="size-s7">
+                <label for="size-s7">S - Rs.462</label><br>
+                
+                <input type="radio" name="size8" value="572" id="size-m8">
+                <label for="size-m8">M - Rs.572</label><br>
+                
+                <input type="radio" name="size8" value="682" id="size-l8">
+                <label for="size-l8">L - Rs.682</label><br>
+                
+                <input type="radio" name="size8" value="792" id="size-xl8">
+                <label for="size-xl8">XL - Rs.792</label><br>
+                
+                <input type="radio" name="size8" value="702" id="size-xxl8">
+                <label for="size-xxl8">XXL - Rs.702</label><br>
+                
+                <input type="radio" name="size8" value="812" id="size-xxxl8">
+                <label for="size-xxxl8">XXXL - Rs.812</label><br>
+              </form>
+              
+        
+              <input type="number" class="inputall" id="quantity8" placeholder="Enter Qty" min="0">
+          
+        
+           
+        
+         
+           <button id="cartadd" class="qtybtn" onclick="calculateTotal8()" >Add To Bag <i class="fa-solid fa-bag-shopping"></i></button>
+           <button class="qtybtn" onclick="removeFromBag8()"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+       
+        <div class="cart-main-box"> <h1><i class="fa-solid fa-cart-shopping"> </i>Cart</h1>
+
+          <div class="headingtext">
+            <h3>Item Name & Price</h3><br>
+
+            <label id="name-price">
+                
+            </label><br>
+            <label id="name-price1">
+                
+            </label>
+        </label><br>
+        <label id="name-price2">
+            
+        </label><br>
+        <label id="name-price3">
+            
+        </label><br>
+        <label id="name-price4">
+            
+        </label><br>
+
+        <label id="name-price5">
+            
+        </label><br>
+          
+        <label id="name-price6">
+            
+        </label><br>
+        <label id="name-price7">
+            
+        </label><br>
+
+        <label id="name-price8">
+            
+       
+    </div>
+        
+        <center>
+            <button class="qtybtn" id="checkout">Check Out</button>
+        </center>
+            
+
+
+     <!--footer-->
+     <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box1">
+                <h2 class="headingtext">
+                    <img src="footlogo.png" alt="logo" style="height: 120px;">  <br>
+                    -Where Fashion Meets You-
+
+                </h2>
+                <p>
+                    Dive into our vast collections overflowing with must-have styles for every occasion.  Whether you're looking for trendy looks for men or the latest fashions for women, we're your one-stop shop to elevate your wardrobe. Browse our diverse selection and discover the perfect outfit to express your unique style
+                </p>
+                <div class="footer-icon-container">
+                 
+                    <p> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> Instagram</p>
+                    
+                    <p><i class="fa-brands fa-facebook" style="color:#ffffff;"></i> Facebook</p>
+                    
+                    <p><i class="fa-brands fa-twitter" style="color: #ffffff;"></i> Twitter</p>
+                    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Sairam-Radhakrishnan" target="_blank" style="color: #ffffff; text-decoration: underline;"> Vist GitHub Profile </a>  </p>
+                    
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="Index.js"> </script>

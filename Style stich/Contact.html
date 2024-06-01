@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Style Stitch</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="Style Stitch.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <!--Nav Bar-->
+   
+   <nav class="navbar">
+    <img src="logo style.png" alt="logo" style="height: 70px;">
+        
+    <div class="navbar-links">
+
+        <p class="navbar-link"><a href="Index.html">Home</a></p>
+        <p class="navbar-link"><a href="collection.html">Collections</a></p>
+        <p class="navbar-link"><a href="Contact.html" > Contact</a></p>
+
+    </div>
+
+    <div class="navbar-menu-toggle">
+        <i class="fa-solid fa-bars" onclick="showNavbar()"></i>
+
+    </div>
+
+</nav>
+<!--side Bar-->
+<div class="side-navbar">
+
+    <p style="text-align: right;">
+        <i class="fa-solid fa-xmark" onclick="closeNavbar()"></i>
+    </p>
+
+    <div class="sidebar-links">
+
+        <p class="side-navbar-links"> <a href="Index.html">Home </a> </p>
+        <p class="side-navbar-links"> <a href="collection.html">Collections</a> </p> 
+        <p class="side-navbar-links"> <a href="Contact.html"></i>Contact</a>  </p>
+        <a href="Products.html"></a>
+    </div>
+
+</div>
+
+<div class="contact">
+<h1>Contact Us</h1>
+
+<input class="input-contact" type="text" id="name"  placeholder="Enter Name">
+<input class="input-contact"type="email" id="mail" placeholder="Enter Email">
+<input type="text" class="msg" id="msg" placeholder="Enter Message">
+
+<button class="send" id="send" onclick="send()">Send</button>
+
+
+<p>Our Corporate Office</p>
+<h3><i class="fa-solid fa-location-dot"></i> Address: 1234, ABC Street, Besant Nagar, Chennai - 600090</h3>
+<p class="p1"><i class="fa-solid fa-map-location-dot"></i> <a href="https://www.google.com/maps/place/Besant+Nagar,+Chennai,+Tamil+Nadu/@12.9998327,80.2576015,14.74z/data=!4m6!3m5!1s0x3a5267fadf0cdca9:0x54228587f3eb3efd!8m2!3d13.0002927!4d80.2666982!16zL20vMDU4N25r?entry=ttu" target="_blank" style="color: black;" text-decoration: underline;"> View Map </a>  </p>
+
+<p class="p1">
+    <i class="fa-solid fa-phone"></i>
+    Phone : +91 44 24917XXX</p>
+    <p class="p2"><i class="fa-solid fa-business-time"></i>  09:30 AM  to 05:30 PM</p> 
+    <p class="p3"><i class="fa-solid fa-envelope"></i> E-Mail : info@stylestitch.com</p>
+   
+
+
+</div>
+
+
+</div>
+ <!--footer-->
+ <div class="footer">
+    <div class="footer-container">
+        <div class="footer-box1">
+            <h2 class="headingtext">
+                <img src="footlogo.png" alt="logo" style="height: 120px;">  <br>
+                -Where Fashion Meets You-
+
+            </h2>
+            <p>
+                Dive into our vast collections overflowing with must-have styles for every occasion.  Whether you're looking for trendy looks for men or the latest fashions for women, we're your one-stop shop to elevate your wardrobe. Browse our diverse selection and discover the perfect outfit to express your unique style
+            </p>
+            <div class="footer-icon-container">
+             
+                <p> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> Instagram</p>
+                
+                <p><i class="fa-brands fa-facebook" style="color:#ffffff;"></i> Facebook</p>
+                
+                <p><i class="fa-brands fa-twitter" style="color: #ffffff;"></i> Twitter</p>
+                <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Sairam-Radhakrishnan" target="_blank" style="color: #ffffff; text-decoration: underline;"> Vist GitHub Profile </a>  </p>
+                
+                
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+<script src="Index.js"></script>
