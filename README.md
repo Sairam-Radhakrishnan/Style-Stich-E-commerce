@@ -1,7 +1,7 @@
 # Style-Stich-E-commerce
 Style Stich E-commerce Webstie  (Frontend Basic)
 
-<h2>Live Link: https://stylestich.netlify.app </h2>
+<h2> <a href="https://stylestich.netlify.app" target="_blank"> View Live Website </a> </h2>
 
 ![logo style](https://github.com/Sairam-Radhakrishnan/Style-Stich-E-commerce-/assets/156107694/468dbf0f-6a84-43da-b047-fbd4497783e0)
 
