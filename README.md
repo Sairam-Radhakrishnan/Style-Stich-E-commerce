@@ -43,7 +43,7 @@ Users can adjust quantities, remove items, and proceed to checkout.
 i)HTML (Hypertext Markup Language)<br>
 ii)CSS (Cascading Style Sheets)<br>
 iii)JavaScript<br>
-iv)Font Awesome and Icons8
+
 
 
 </p> <br>
