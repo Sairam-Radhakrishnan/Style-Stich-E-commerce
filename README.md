@@ -6,7 +6,7 @@ Style Stich E-commerce Webstie  (Frontend Basic)
 ![logo style](https://github.com/Sairam-Radhakrishnan/Style-Stich-E-commerce-/assets/156107694/468dbf0f-6a84-43da-b047-fbd4497783e0)
 
 
-<h2>Project Overview: “Style Stitch” is an e-commerce website designed for fashion enthusiasts. It allows users to explore and purchase trendy outfits.The website emphasizes a seamless shopping experience and showcases the latest fashion trends.</h2>  <br>
+<h2>Project Overview: “Style Stitch” is an e-commerce (Basic) website designed for fashion enthusiasts. It allows users to explore and purchase trendy outfits.The website emphasizes a seamless shopping experience and showcases the latest fashion trends.</h2>  <br>
 
 <h3>Key Features:</h3><br>
 <h4>1.	Product Showcase:
